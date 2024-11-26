@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Online de Roupas</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+   
+    <div id="tela_inicial" class="screen active">
+      <h1>Bem-vindo à RL Modas</h1>
+      <button onclick="mudarTela('interface_interacoes')">Entrar</button>
+      
+    </div>
+
+    
+    <div id="interface_interacoes" class="screen">
+      <h1>Explore Nossos Produtos</h1>
+      <button onclick="mudarTela('categorias')">Ver Categorias</button>
+      <button onclick="mudarTela('tela_inicial')">Voltar</button>
+    </div>
+
+    
+    <div id="categorias" class="screen">
+      <h1>Categorias</h1>
+      <ul id="lista_categorias"></ul>
+      <div id="produtos"></div>
+      <button onclick="mudarTela('interface_interacoes')">Voltar</button>
+    </div>
+
+    
+    <div id="carrinho" class="screen">
+      <h1>Seu Carrinho</h1>
+      <ul id="lista_carrinho"></ul>
+      <button onclick="mudarTela('interface_interacoes')">Voltar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
